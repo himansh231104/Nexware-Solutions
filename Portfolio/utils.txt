@@ -1,0 +1,463 @@
+<<<---------------- General css Props ---------------- >>>
+
+/* Break Points */
+
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {}
+
+/* md */
+@media (min-width: 768px) {}
+
+/* lg */
+@media (min-width: 1024px) {}
+
+/* xl */
+@media (min-width: 1280px) {}
+
+/* 2xl */
+@media (min-width: 1536px) {}
+
+/* Color Variables */
+--clr-dark: #020617;
+--clr-light: #f1f5f9;
+--clr-slate400: #94a3b8;
+--clr-slate600: #475569;
+--clr-slate800: #1e293b;
+--clr-indigo: #4f46e5;
+--clr-rose: #e11d48;
+
+/* RGB Values 
+Indigo -- rgb(79, 70, 229)
+Rose -- rgb(225, 29, 72) 
+*/
+
+/* Size Variables */
+--size-xxs: 0.5rem;
+--size-xs: 0.75rem;
+--size-sm: 0.875rem;
+--size-base: 1rem;
+--size-lg: 1.125rem;
+--size-xl: 1.25rem;
+--size-2xl: 1.5rem;
+--size-3xl: 1.875rem;
+--size-4xl: 2.25rem;
+--size-5xl: 3rem;
+--size-6xl: 3.75rem;
+--size-7xl: 4.5rem;
+--size-8xl: 6rem;
+--size-9xl: 8rem;
+--size-10xl: 10rem;
+
+<<<---------------- Directory Structure ---------------- >>>
+
+-->src
+    -->main.js
+-->styles
+    -->modern-normalize.css, style.css, utils.css
+    -->components
+        -->component1.css
+        -->component2.css
+        -->component3.css
+-->index.html
+
+
+<<<---------------- main.js ---------------- >>>
+import "../styles/modern-normalize.css";
+import "../styles/style.css";
+import "../styles/utils.css";
+
+
+<<<---------------- utils.css ---------------- >>>
+
+.section{
+    margin-top: 5rem;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05rem;
+    background-color: var(--clr-rose);
+    color: #f1f5f9;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgb(225, 29, 72, 0.5), 0 6px 6px rgb(225, 29, 72, 0.5),0 0 100px -10px var(--clr-rose);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 24px rgb(225, 29, 72, 0.25), 0 10px 10px rgb(225, 29, 72, 0.22),0 0 120px -10px var(--clr-rose);
+}
+
+
+/* Break Points */
+
+/* xs */
+@media (min-width: 475px) {
+    .container{
+        max-width: 475px;
+    }
+}
+/* sm */
+@media (min-width: 640px) {
+    .container{
+        max-width: 640px;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }   
+    .section{
+        margin-top: 10rem;
+    }
+}
+/* xl */
+@media (min-width: 1280px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+    .container{
+        max-width: 1536px;
+    }
+}
+
+<<<---------------- style.css ---------------- >>>
+
+:root {
+  /* Color Variables */
+  --clr-dark: #020617;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-indigo: #4f46e5;
+  --clr-rose: #e11d48;
+
+  /* RGB Values 
+    Indigo -- rgb(79, 70, 229)
+    Rose -- rgb(225, 29, 72) 
+    */
+
+  /* Size Variables */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  /* Color Variables */
+  --clr-light: #020617;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+a {
+  color: var(--clr-rose);
+  text-decoration: none;
+}
+
+strong {
+  color: var(--clr-indigo);
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-rose);
+  outline: 1px solid var(--clr-rose);
+}
+
+<<<---------------- modern-normalize.css ---------------- >>>
+
+
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+	font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+	line-height: 1.15; /* 1. Correct the line height in all browsers. */
+	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+	tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+	margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}

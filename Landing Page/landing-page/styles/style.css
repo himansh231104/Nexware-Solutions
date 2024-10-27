@@ -1,0 +1,116 @@
+
+/* <<<---------------- style.css ---------------- >>> */
+
+:root {
+  /* Color Variables */
+  --clr-dark: #020617;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-indigo: #4f46e5;
+  --clr-rose: #e11d48;
+
+  --clr-licorice: #170312;
+  --clr-darkPurple: #33032F;
+  --clr-palatinate: #531253;
+  --clr-cadetGray: #A0ACAD;
+  --clr-celadon: #97D8B2;
+
+  /* RGB Values 
+    Indigo -- rgb(79, 70, 229)
+    Rose -- rgb(225, 29, 72) 
+    */
+
+  /* Size Variables */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  /* Color Variables */
+  --clr-light: #020617;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  background-color: var(--clr-light);
+  color: var(--clr-indigo);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+a {
+  color: var(--clr-rose);
+  text-decoration: none;
+}
+
+strong {
+  color: var(--clr-rose);
+}
+
+hr {
+  width: 80%;               
+  height: 1.5px;           
+  border: none;            
+  background-color: var(--clr-slate400);
+  opacity: 0.8;             
+  border-radius: 3px;    
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-rose);
+  outline: 1px solid var(--clr-rose);
+}

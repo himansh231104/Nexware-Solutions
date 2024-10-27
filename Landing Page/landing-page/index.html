@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./logo_pheonix.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CodeFuxion</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo">
+        <img src="./logo_pheonix.png" alt="logo" class="header__img" />
+        <h2 class="header__title">CodeFuxion</h2>
+      </div>
+      <div class="header__menu">
+        <ul class="header__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#developer">Developer</a></li>
+          <li>
+            <button>
+              <svg
+                aria-label="theme toggle button"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="header__sun"
+                id="theme-toggle"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="header__btn btn">Sign in</button>
+          </li>
+        </ul>
+      </div>
+      <!-- Mobile Navbar -->
+      <div class="mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="mobile-nav__bars"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__links">
+          <li><a href="#home" class="mobile-nav__links">Home</a></li>
+          <li><a href="#about" class="mobile-nav__links">About</a></li>
+          <li><a href="#explore" class="mobile-nav__links">Explore</a></li>
+          <li><a href="#developer" class="mobile-nav__links">Developer</a></li>
+          <li>
+            <button>
+              <svg
+                aria-label="theme toggle button"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="header__sun mobile-nav__links"
+                id="theme-toggle"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="header__btn btn">Sign in</button>
+          </li>
+        </ul>
+      </div>
+      <!-- End of Mobile Navbar -->
+    </header>
+    <section class="hero container section" id="home">
+      <div class="hero-left">
+        <div class="hero-left__main">
+          <h1 class="hero-left__main-title">Think, Code, Conquer.</h1>
+        </div>
+        <div class="hero-left__sub">
+          <h3 class="hero-left__sub-title">
+            Refine your coding expertise with problem-solving at every level.
+          </h3>
+          <br />
+          <button class="hero__btn btn">Create Account &nbsp; <b>→</b></button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="hero.gif" alt="Intro Image" class="hero-right__img" />
+      </div>
+    </section>
+    <section class="about container " id="about">
+      <div class="about-left">
+        <h2 class="about__title">ABOUT US</h2>
+        <h3 class="about__subtitle">
+          <q> Empowering Coders to Solve, Learn, and Succeed. </q>
+        </h3>
+        <p class="about__description">
+          At <a href="#">CodeFuxion</a>, our mission is simple: to provide
+          developers of all levels with an engaging platform to hone their
+          coding skills. We believe in the power of problem-solving as the key
+          to mastering programming and algorithms. Whether you're preparing for
+          technical interviews, sharpening your skills for competitive
+          programming, or simply looking to challenge yourself, we've got you
+          covered.
+        </p>
+
+        <p class="about__description">
+          Our platform is designed to offer a wide range of problems, from
+          beginner to expert level, across various domains like algorithms, data
+          structures, and real-world applications. With each problem you solve,
+          you're not just writing code—you’re building confidence, improving
+          efficiency, and preparing for the challenges of tomorrow's tech world.
+        </p>
+
+        <p class="about__description">
+          Join our growing community of learners, competitors, and enthusiasts.
+          Together, let’s unlock the potential of code!
+        </p>
+      </div>
+      <div class="about-right">
+        <img src="./about.gif" alt="" class="about__img" />
+      </div>
+    </section>
+    <section class="explore container " id="explore">
+      <div class="explore__left">
+        <h2 class="explore__title">Start Exploring</h2>
+        <p class="explore__subtitle">
+          Dive into a vast collection of coding challenges tailored to all skill
+          levels. From algorithms to data structures, each problem is crafted to
+          enhance your problem-solving abilities. Begin exploring, learning, and
+          growing as a coder today with <a href="#">CodeFuxion</a>.
+        </p>
+        <img src="./explore.png" alt="" class="explore__img1" />
+      </div>
+      <div class="explore__right">
+        <img
+          src="./Isometric Bot.gif"
+          alt="Explore Bot"
+          class="explore__img2"
+        />
+      </div>
+    </section>
+    <section class="developer container " id="developer">
+      <div class="developer__intro">
+        <h2 class="developer__title">Developer</h2>
+        <p class="developer__subtitle">
+          Code, test, and refine your solutions in real-time. Our code
+          playground let you experiment, debug, and improve instantly—perfect
+          for hands-on learning and skill development at every level.
+        </p>
+      </div>
+      <div class="developer__code container">
+        <div class="developer__preferences">
+          <!-- Language selector dropdown -->
+          <select id="language-selector">
+            <option value="71">Python</option>
+            <!-- Judge0 ID: 71 -->
+            <option value="63">JavaScript</option>
+            <!-- Judge0 ID: 63 -->
+            <option value="74">TypeScript</option>
+            <!-- Judge0 ID: 74 -->
+            <option value="76">C++</option>
+            <!-- Judge0 ID: 76 -->
+            <option value="51">C#</option>
+            <!-- Judge0 ID: 51 -->
+            <option value="62">Java</option>
+            <!-- Judge0 ID: 62 -->
+            <option value="80">HTML</option>
+            <!-- Judge0 ID: 80 -->
+            <option value="83">CSS</option>
+            <!-- Judge0 ID: 83 -->
+            <option value="68">PHP</option>
+            <!-- Judge0 ID: 68 -->
+            <option value="82">SQL</option>
+            <!-- Judge0 ID: 82 -->
+            <option value="72">Ruby</option>
+            <!-- Judge0 ID: 72 -->
+            <option value="60">Go</option>
+            <!-- Judge0 ID: 60 -->
+            <option value="77">Swift</option>
+            <!-- Judge0 ID: 77 -->
+            <option value="78">Kotlin</option>
+            <!-- Judge0 ID: 78 -->
+            <option value="90">Markdown</option>
+            <!-- Judge0 ID: 90 -->
+            <option value="46">Bash</option>
+            <!-- Judge0 ID: 46 -->
+            <option value="79">Objective-C</option>
+            <!-- Judge0 ID: 79 -->
+            <option value="80">R</option>
+            <!-- Judge0 ID: 80 -->
+            <option value="73">Rust</option>
+            <!-- Judge0 ID: 73 -->
+            <option value="54">Perl</option>
+            <!-- Judge0 ID: 54 -->
+            <option value="81">XML</option>
+            <!-- Judge0 ID: 81 -->
+            <option value="66">YAML</option>
+            <!-- Judge0 ID: 66 -->
+            <option value="58">Dockerfile</option>
+            <!-- Judge0 ID: 58 -->
+            <option value="57">PowerShell</option>
+            <!-- Judge0 ID: 57 -->
+            <option value="64">Lua</option>
+            <!-- Judge0 ID: 64 -->
+            <option value="55">CoffeeScript</option>
+            <!-- Judge0 ID: 55 -->
+            <option value="47">F#</option>
+            <!-- Judge0 ID: 47 -->
+            <option value="84">VB.NET</option>
+            <!-- Judge0 ID: 84 -->
+            <option value="92">GraphQL</option>
+            <!-- Judge0 ID: 92 -->
+            <option value="48">Batch</option>
+            <!-- Judge0 ID: 48 -->
+            <option value="43">Plain Text</option>
+            <!-- Judge0 ID: 43 -->
+          </select>
+
+          <!-- Run Button -->
+          <button id="run-code" class="developer__btn btn">Run Code</button>
+        </div>
+
+        <div class="developer__playground">
+          <!-- Editor Section -->
+          <div id="editor"></div>
+          <!-- Output Section -->
+          <div id="output">
+            <strong>Output:</strong>
+            <pre id="execution-result"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="joinus section container">
+      <p class="join__description">
+        If you are passionate about tackling some of the most interesting
+        problems around, we would love to hear from you.
+      </p>
+      <a href="#">Join Out Team →</a>
+    </div>
+    <footer class="footer container">
+      <hr />
+      <div class="bottom-tab">
+        <p>
+          <u
+            >Copyright &copy; 2024 <a href="#">CodeFuxion</a>| All Rights
+            Reserved
+          </u>
+        </p>
+        <p>
+          <u>
+            Designed By <b>Crimson<strong>X</strong></b>
+          </u>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+  <!-- MONACO EDITOR SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+</html>

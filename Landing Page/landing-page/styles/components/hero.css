@@ -1,0 +1,132 @@
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+.hero-left {
+    width: 100%;
+}
+.hero-right {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.hero-left__main {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem 0;
+}
+.hero-left__main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-palatinate);
+    font-size: var(--size-3xl);
+}
+.hero-left__sub {
+    background-color: rgb(78, 5, 175);
+    height: 39.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.hero-left__sub-title {
+    color: white;
+    font-size: var(--size-xl);
+    text-align: center;
+    max-width: 30ch;
+}
+.hero__btn {
+    font-size: var(--size-sm);
+}
+.hero-right__img {
+    width: 100%;
+    height: 30vh;
+}
+
+/* Break Points */
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+    .hero-left {
+        width: 80%;
+        padding-top: 4rem;
+    }
+    
+    .hero-left__main {
+        align-items: flex-end;
+        height: 60.4%;
+    }
+    .hero-left__main-title {
+        font-size: var(--size-4xl);
+        max-width: 7ch;
+        padding: 1rem 0;
+    }
+    .hero-left__sub {
+        height: 39.6%;
+        padding: 2rem 0;
+    }
+    .hero-left__sub-title {
+        max-width: 20ch;
+    }
+    .hero-right__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .hero-left {
+        width: 40%;
+        padding-top: 0;
+    }
+    .hero-right {
+        width: 60%;
+        padding-top: 0;
+    }
+    .hero-left__main-title {
+        font-size: var(--size-6xl);        
+        padding: 1rem 0;
+    }
+    .hero-left__sub {
+        height: 39.6%;
+        padding: 2rem 0;
+    }
+    .hero-left__sub-title {
+        max-width: 25ch;
+        font-size: var(--size-2xl);
+    }
+    .hero__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .hero-left__main-title {
+        font-size: var(--size-7xl);        
+        padding: 1rem 0;
+    }
+    .hero-left__sub-title {
+        max-width: 25ch;
+        font-size: var(--size-3xl);
+    }
+}

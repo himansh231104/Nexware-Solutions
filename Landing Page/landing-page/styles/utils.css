@@ -1,0 +1,93 @@
+a {
+  font-weight: 500;
+  color: var(--clr-rose);
+  text-decoration: inherit;
+  border-radius: 5rem;
+  padding: 0.3rem 0.5rem;
+  background: transparent;
+  transition: color 0.3s, background-color 0.3s;
+}
+a:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-rose);
+}
+
+li {
+  list-style-type: none;
+}
+
+--------------------------------------------------------------------------
+.section {
+  margin-top: 5rem;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 0.5rem; */
+  /* padding-right: 0.5rem; */
+  /* border: 1px solid yellow; */
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05rem;
+  background-color: var(--clr-rose);
+  color: #f1f5f9;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgb(225, 29, 72, 0.5), 0 6px 6px rgb(225, 29, 72, 0.5),
+    0 0 100px -10px var(--clr-rose);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgb(225, 29, 72, 0.25),
+    0 10px 10px rgb(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
+}
+
+/* Break Points */
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .section {
+    margin-top: 5rem;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

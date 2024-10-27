@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+  background-color: transparent;
+  transition: color 0.5s ease;
+  color: var(--clr-rose);
+  z-index: 999;
+  padding: 0.5rem 1.5rem;
+}
+
+.mobile-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--clr-light);
+  height: 400px;
+  width: 50%;
+  border-radius: 5px;
+  z-index: 999;
+}
+.mobile-menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header.scrolled {
+  background: linear-gradient(rgba(41, 16, 38, 1), rgba(41, 16, 38, 9), rgba(41, 16, 38, 0.8)); 
+}
+
+
+.header__sun {
+  color: var(--clr-rose);
+  width: var(--size-base);
+  height: var(--size-base);
+  user-select: none;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__img {
+  width: 2rem;
+}
+.header__title {
+  font-size: var(--size-base);
+  color: crimson;
+}
+.header__menu {
+  display: none;
+}
+.mobile-nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mobile-nav__bars {
+  width: 2rem;
+  z-index: 1000;
+}
+
+
+/* Break Points */
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 1rem;
+  }
+  .header__img {
+    width: 4rem;
+  }
+  .header__title {
+    font-size: var(--size-base);
+  }
+  .header__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    padding-right: 1rem;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .header__links {
+    display: flex;
+    font-size: var(--size-sm);
+    gap: 1rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .header__title {
+    font-size: var(--size-lg);
+  }
+
+  .header__links {
+    font-size: var(--size-base);
+    gap: 1.5rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .header__menu {
+    width: 100%;
+  }
+  .header__title {
+    font-size: var(--size-xl);
+  }
+  .header__links {
+    font-size: var(--size-base);
+    gap: 2rem;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
