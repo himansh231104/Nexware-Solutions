@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Runner with Monaco Editor and Judge0 API</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+  <body>
+    <h1>Code Runner with Monaco Editor and Judge0 API</h1>
+
+    <!-- Language Selector Dropdown -->
+    <label for="language-selector">Choose Language: </label>
+    <select id="language-selector">
+      <option value="63">JavaScript</option>
+      <option value="74">TypeScript</option>
+      <option value="71">Python</option>
+      <option value="76">C++</option>
+      <option value="51">C#</option>
+      <option value="62">Java</option>
+      <option value="80">HTML</option>
+      <option value="83">CSS</option>
+      <option value="68">PHP</option>
+      <option value="82">SQL</option>
+      <option value="72">Ruby</option>
+      <option value="60">Go</option>
+      <option value="77">Swift</option>
+      <option value="78">Kotlin</option>
+      <option value="46">Bash</option>
+      <option value="79">Objective-C</option>
+      <option value="80">R</option>
+      <option value="73">Rust</option>
+      <option value="54">Perl</option>
+      <option value="81">XML</option>
+      <option value="66">YAML</option>
+      <option value="58">Dockerfile</option>
+      <option value="57">PowerShell</option>
+      <option value="64">Lua</option>
+      <option value="55">CoffeeScript</option>
+      <option value="47">F#</option>
+      <option value="84">VB.NET</option>
+      <option value="92">GraphQL</option>
+      <option value="48">Batch</option>
+      <option value="43">Plain Text</option>
+    </select>
+
+    <!-- Monaco Editor Container -->
+    <div id="editor"></div>
+
+    <!-- Run Button -->
+    <button id="run-code">Run Code</button>
+
+    <!-- Output Section -->
+    <div id="output">
+      <strong>Output:</strong>
+      <pre id="execution-result"></pre>
+    </div>
+
+    <!-- Load Monaco Editor from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+
+    <!-- Judge0 API Integration -->
+    <script src="./test.js"></script>
+  </body>
+</html>
